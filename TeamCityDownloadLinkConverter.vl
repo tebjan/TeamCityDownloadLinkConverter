@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="QufICdUlxvoMiXGIkcjCRs" LanguageVersion="2020.3.0.43" Version="0.128">
-  <NugetDependency Id="AlJjc2SZSUKL1Tf8mSJRzH" Location="VL.CoreLib" Version="2020.3.0-0043-g2cdd73bab2" />
+<Document xmlns:p="property" Id="QufICdUlxvoMiXGIkcjCRs" LanguageVersion="2020.3.0.176" Version="0.128">
+  <NugetDependency Id="AlJjc2SZSUKL1Tf8mSJRzH" Location="VL.CoreLib" Version="2020.3.0-0161-g4bf170f1de" />
   <Patch Id="KkukNO05ZUMO6vtPsoDGt5">
     <Canvas Id="LJvjjwrUB9tLARGbnru6TZ" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -219,7 +219,7 @@
     ************************ ParseBuildId ************************
 
 -->
-      <Node Name="ParseBuildId" Bounds="718,178,627,466" Id="IJpqZMTxHLVOFwYR3SEwqD">
+      <Node Name="ParseBuildId" Bounds="718,178,796,466" Id="IJpqZMTxHLVOFwYR3SEwqD">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
@@ -248,11 +248,11 @@
           <Link Id="DZds4WNmxXLMZqDWBoXQWC" Ids="LaxOo3lbc6tMPTGjjB2SzF,MOeqFeCLTsKO7qrY36o6Qh" />
           <Pin Id="NIUB5Fv87VZLIkqYF6YElT" Name="Input 2" Kind="InputPin" Bounds="767,197" />
           <Link Id="MGG7OoK3ImOPNsPOlDU68a" Ids="NIUB5Fv87VZLIkqYF6YElT,LaxOo3lbc6tMPTGjjB2SzF" IsHidden="true" />
-          <Node Bounds="844,315,41,19" Id="CFpvgll5yItPIUugQWgJXH">
+          <Node Bounds="845,315,41,19" Id="CFpvgll5yItPIUugQWgJXH">
             <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="XML" />
-              <Choice Kind="OperationCallFlag" Name="Parse" />
+              <Choice Kind="OperationNode" Name="Parse (XDocument)" />
             </p:NodeReference>
             <Pin Id="JLSfe3gPkdFO43Nc872tzd" Name="Text" Kind="InputPin" />
             <Pin Id="SAUCBvMRD8iNXZkji6jsKV" Name="Options" Kind="InputPin" />
@@ -264,7 +264,7 @@
           <Link Id="SlpUHmgNl6UMw5Burw2C3I" Ids="EHa6MOnaFR4MwOkXGogeo0,OqAT6ezrIEWLxRMsYM1rat" />
           <Pin Id="LcbLjhOASIPMFzdT3Emo6o" Name="Root" Kind="OutputPin" Bounds="732,484" />
           <Link Id="HCE6F7ws1MLNG8YufW4V47" Ids="OqAT6ezrIEWLxRMsYM1rat,LcbLjhOASIPMFzdT3Emo6o" IsHidden="true" />
-          <Node Bounds="847,419,127,19" Id="ExyzjhMrTSbLhijouCPZNu">
+          <Node Bounds="846,419,127,19" Id="ExyzjhMrTSbLhijouCPZNu">
             <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="XPathGetAttributeValues" />
@@ -281,7 +281,7 @@
           </Pad>
           <Link Id="JNMU4sy0Kt7MGw2PELxODK" Ids="InR5uCFUpdxLPuw2DIJPIo,GZyIlf2sZKRM1PJmk78FC9" />
           <Link Id="TmxM1ZTVQzJOqHl5CYJLQc" Ids="EHa6MOnaFR4MwOkXGogeo0,AkaLDoJF2gDN2Iu81Pfx05" />
-          <Pad Id="EdhV7gQKpf3PFtgy7ThfK2" Comment="Name" Bounds="1183,342,102,15" ShowValueBox="true" isIOBox="true" Value="/files/file[contains(@name,'_setup.exe')]/content/@href">
+          <Pad Id="EdhV7gQKpf3PFtgy7ThfK2" Comment="Name" Bounds="1183,342,271,3" ShowValueBox="true" isIOBox="true" Value="/files/file[contains(@name,'_setup.exe')]/content/@href">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -314,7 +314,7 @@
           </Pad>
           <Link Id="Fhy8zgmcx2rOuZ8xteQugT" Ids="IEWdq5LnnaNL9OKgkB5Lu3,KrhzZl9z4ppMwWcjiWoeD8" />
           <Link Id="ND926cpkfWLOJmoFMd5LHE" Ids="Ake2yX0To7QPDFM0imEsxw,CLRlXlUa823OE63HRYkEVq" />
-          <ControlPoint Id="N7UeRB17fyWQI57mVdc4NB" Bounds="812,544" />
+          <ControlPoint Id="N7UeRB17fyWQI57mVdc4NB" Bounds="848,537" />
           <Link Id="SSID419ilIrPNTxJmZlyQs" Ids="QCD9KLi5jHWMs6FWm5DWYg,N7UeRB17fyWQI57mVdc4NB" />
           <Pin Id="GkP7ehRezORMKaf6xUjYqp" Name="Files" Kind="OutputPin" Bounds="811,545">
             <p:TypeAnnotation>
@@ -327,7 +327,7 @@
             </p:TypeAnnotation>
           </Pin>
           <Link Id="Vv1TqNediFqL19Cp3vHYjM" Ids="N7UeRB17fyWQI57mVdc4NB,GkP7ehRezORMKaf6xUjYqp" IsHidden="true" />
-          <ControlPoint Id="AsRBlMMISZyLwgjvLIilrC" Bounds="1044,627" />
+          <ControlPoint Id="AsRBlMMISZyLwgjvLIilrC" Bounds="1045,627" />
           <Link Id="MIrI6UXJLYhNEf7Yc79vVm" Ids="TDQzWG309RjO3WPCWBMGmg,AsRBlMMISZyLwgjvLIilrC" />
           <Pin Id="OQABR4X9I5XPpRtYARMSSH" Name="Latest Setup Exe Url" Kind="OutputPin" Bounds="1041,645" />
           <Link Id="L64TRsCkW0eNa5JaR1LLn3" Ids="AsRBlMMISZyLwgjvLIilrC,OQABR4X9I5XPpRtYARMSSH" IsHidden="true" />
@@ -379,7 +379,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="AaQUSbOoJivNhZC6FD5IZR" Name="Bounds" Kind="InputPin" DefaultValue="960, 316, 629, 266">
+            <Pin Id="AaQUSbOoJivNhZC6FD5IZR" Name="Bounds" Kind="InputPin" DefaultValue="1128, 92, 628, 264">
               <p:TypeAnnotation LastCategoryFullName="System.Windows" LastSymbolSource="VL.CoreLib.Windows.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -560,11 +560,7 @@
             <Pin Id="Byav0RO61QdODCxGwe0MYG" Name="Input" Kind="InputPin" />
             <Pin Id="DYez8ypcMI5Os0e0lLXC93" Name="Text" Kind="InputPin" />
             <Pin Id="NvAUlqdLF4oPxegd368SfJ" Name="Left / Bottom" Kind="InputPin" />
-            <Pin Id="B3NWCFEs34jLZkKKgjEXVt" Name="Spacing" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="B3NWCFEs34jLZkKKgjEXVt" Name="Spacing" Kind="InputPin" />
             <Pin Id="DtomFWO8sEfO2331bShIgr" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="PSDYabHLjbAMYMTdhoSjnM" Comment="Text" Bounds="509,879,97,15" ShowValueBox="true" isIOBox="true" Value="Copy to Clipboard">
@@ -754,7 +750,7 @@
                 <Pin Id="GS7sNJh2slbLSQTEdUXlSX" Name="Address" Kind="InputPin" />
                 <Pin Id="CyWrIHfSIZcOd2bTuJfxQJ" Name="Output" Kind="OutputPin" />
               </Node>
-              <Pad Id="INVPPgxyOJpOwh3uyJv9Z8" Comment="Address" Bounds="736,622,159,17" ShowValueBox="true" isIOBox="true" Value="https://teamcity.vvvv.org/guestAuth/app/rest/builds/buildType:vvvv_gamma_stride_Build,branch:default:any,status:success/artifacts/children">
+              <Pad Id="INVPPgxyOJpOwh3uyJv9Z8" Comment="Address" Bounds="736,622,666,11" ShowValueBox="true" isIOBox="true" Value="https://teamcity.vvvv.org/guestAuth/app/rest/builds/buildType:vvvv_gamma_Build,branch:default:any,status:success/artifacts/children">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -888,9 +884,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JmbD4hcApzlNgkedgxCWFz" Location="VL.Elementa" Version="4.0.4" />
-  <NugetDependency Id="VadpQsTimjdPbwcbwXdWH0" Location="VL.Skia" Version="2020.3.0-0043-g2cdd73bab2" />
-  <NugetDependency Id="VdIYgxMTEZkMRtTfx7ink5" Location="VL.CoreLib.Windows" Version="2020.3.0-0043-g2cdd73bab2" />
+  <NugetDependency Id="JmbD4hcApzlNgkedgxCWFz" Location="VL.Elementa" Version="4.0.5" />
+  <NugetDependency Id="VadpQsTimjdPbwcbwXdWH0" Location="VL.Skia" Version="2020.3.0-0161-g4bf170f1de" />
+  <NugetDependency Id="VdIYgxMTEZkMRtTfx7ink5" Location="VL.CoreLib.Windows" Version="2020.3.0-0161-g4bf170f1de" />
   <PlatformDependency Id="U0ih18kfOjJPzuTSouQv4M" Location="System.Windows.Forms" />
   <PlatformDependency Id="SJLmoqJFoOgOtYl2kUWYma" Location="netstandard" />
 </Document>
